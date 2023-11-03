@@ -1,29 +1,16 @@
 package array;
 
+import java.util.ArrayList;
+
 public class test {
 
-	  void printPat(int n)
-	    
-	    {   int i,j,m;
-	        int k,l;
-	         k=n;
-	        l=n;
-	        for(i=n;i>=1;i--)
-	    {
-	        for(j=n;j>=1;j--){
-	            for(m=k;m>=1;m--){
-	                System.out.print(l+" ");
-	            }
-	            l--;
+	   ArrayList<Integer> getTable(int N){
+	        ArrayList<Integer> table = new ArrayList<Integer>();
+	        // code here
+	        for(int i=1;i<=10;i++){
+	        table.add(i*N);
 	        }
-	        System.out.print("$");
-	        l=n;
-	        k--;
-	        
-	        
-	    }
-	        
-	         // Your code here
+	        return table;
 	    }
 }
 
